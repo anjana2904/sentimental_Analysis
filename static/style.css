@@ -1,0 +1,132 @@
+/* static.css */
+*{
+    margin: 0;
+    padding: 0;;
+}
+.main{
+    width: 100;
+    background : linear-gradient(to top, rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5)50%), url(bgimag.png);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+}
+
+.navbar{
+    width: 1200px;
+    height: 75px;
+    margin: auto;
+}
+.icon{
+    width: auto;
+    float: left;
+    height: auto;
+}
+.logo{
+    color: orangered;
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+    padding-left: 20px;
+    float: left;
+    padding-top: 10px;
+}
+.menu{
+    width: auto;
+    float:left;
+    height: auto;
+}
+
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ul li{
+    list-style: none;
+    margin-left: 62px;
+    margin-top: 10px ;
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+}
+ul li a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+
+}
+
+ul li a:hover{
+    color: orangered;
+}
+
+.search{
+    width: 330px;
+    float: right;
+    margin-left: auto;
+    font-family: 'Times New Roman', Times, serif;
+    background: transparent;
+    text-decoration-color: white;
+}
+.srch{
+    font-family: 'Times New Roman', Times, serif;
+    width: auto;
+    height: auto;
+    background: transparent;
+    border:1px solid orangered;
+    color: white;
+}
+
+.btn{
+    width: auto;
+    background: orangered;
+    border: 2px solid orangered;
+    color: white;
+}
+
+.welcome-message{
+    font-family: 'playfair display';
+    width: 50%;
+    position: absolute;
+    background: transparent;
+    color: white;
+    text-align: left;
+    
+}
+.welcome-message p{
+    font-family: 'playfair display';
+    font-size: 50px;
+    display: flex;
+    transition: 0.4s ease-in-out;
+    transform: translateX(20%);
+    margin-top: 10px ;
+    margin-bottom: 40px;
+    text-decoration: solid;
+}
+.welcome-message p1{
+    font-size: 30px;
+    display: flex;
+    transition: 0.8s ease-in-out;
+    transform: translateX(20%);
+    margin-top: 10px ;
+    margin-bottom: 20px;
+    
+}
+.welcome-message p2{
+    font-size: 30px;
+    display: flex;
+    transition: 0.10s ease-in-out;
+    background-color: grey;
+    transform: translateX(5%);
+    text-decoration:underline;
+}
+
+
+
+
+

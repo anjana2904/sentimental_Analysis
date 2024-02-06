@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Compare Models</title>
+    <link rel="stylesheet" type="text/css" href="/static/stylec.css">
+</head>
+<body>
+    <!-- Display the model comparison results -->
+    <!DOCTYPE html>
+<html>
+<head>
+    <title>Model Comparison</title>
+</head>
+<body>
+    <h1>Model Comparison</h1>
+    <table border="1">
+        <tr>
+            <th>Model</th>
+            <th>Accuracy</th>
+        </tr>
+        {% for model, accuracy in comparison_results.items() %}
+            <tr>
+                <td>{{ model }}</td>
+                <td>{{ accuracy }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
+
+</body>
+</html>

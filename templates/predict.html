@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predict Rating</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #c2e8c2; /* Greenish background */
+            text-align: center; /* Center the content */
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 20px auto; /* Center the form */
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            color: #555;
+        }
+
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #ff8c00; /* Orange button */
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #e07e00; /* Darker orange on hover */
+        }
+
+        h3 {
+            color: #333;
+        }
+
+        p {
+            color: #4CAF50; /* Green color for review */
+            font-weight: bold; /* Make the text bold */
+        }
+
+        strong {
+            color: #ff8c00; /* Orange color for strong text */
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Predict Rating</h2>
+
+    <form action="/predict" method="post">
+        <label for="review">Enter your review:</label>
+        <textarea id="review" name="review" rows="4" cols="50" required></textarea><br>
+
+        <input type="submit" value="Predict Rating">
+    </form>
+
+    {% if review %}
+        <h3>Your Review:</h3>
+        <p><strong>{{ review }}</strong></p> <!-- Make the review text bold -->
+        <h3>Predicted Rating:</h3>
+        <p><strong>{{ predicted_rating }}</strong></p> <!-- Make the predicted rating text bold -->
+    {% endif %}
+
+</body>
+
+</html>

@@ -1,0 +1,108 @@
+/* styles.css */
+body{
+        width: 100;
+        background : linear-gradient(to top, rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5)50%), url(bgimag.png);
+        background-position: center;
+        background-size: cover;
+        height: 100vh;
+    }
+
+/* Style the main container */
+.main {
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(89, 89, 89, 0.397);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    box-align: center;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Style the headings */
+h1 {
+    color: black;
+    font-size: 44px;
+}
+
+h2 {
+    color: black;
+    font-size: 20px;
+}
+
+/* Style the form elements */
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    font-size: 20px;
+    margin-bottom: 40px;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+}
+
+button {
+    background-color: white;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: black;
+}
+
+/* Style the prediction result */
+p {
+    font-size: 24px;
+    color: black;
+}
+
+form {
+    text-align: center;
+    margin-top: 20px;
+}
+
+label {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+    max-width: 400px;
+    margin: 10px auto;
+}
+
+button {
+    background-color: orangered;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+h3{
+    font-size: 24px;
+    color: orangered;
+
+}

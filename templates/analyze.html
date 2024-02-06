@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentiment Analysis Results</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f84402cb;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            color: #555;
+        }
+
+        select,
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #4caf50;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        #result-container {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        p#result-text {
+            color: #555;
+        }
+    </style>
+    <!-- Add any additional styles or scripts if needed -->
+</head>
+
+<body>
+    <h1>Sentiment Analysis Results</h1>
+
+    <form action="/analyze" method="post">
+        <label for="model">Select Model:</label>
+        <select name="model" id="model">
+            <option value="SVM">SVM</option>
+            <option value="logistic_regression">Logistic Regression</option>
+            <option value="Multinomial Naive Bayes">Multinomial Naive Bayes</option>
+            <option value="Bernoulli Naive Bayes">Bernoulli Naive Bayes</option>
+            <option value="k-NN">k-NN</option>
+            <option value="Ensemble">Ensemble</option>
+            <option value="Decision Tree">Decision Tree</option>
+        </select>
+
+        <br>
+
+        <label for="metric">Select Metric:</label>
+        <select name="metric" id="metric">
+            <option value="Accuracy">Accuracy</option>
+            <option value="ROC Curve">ROC Curve</option>
+            <option value="Precision,Recall and F-Measure">Precision, Recall, and F-Measure</option>
+        </select>
+
+        <br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <!-- Display the result here -->
+    <div id="result-container">
+        <h2>Result:</h2>
+        <p id="result-text">Waiting for analysis...</p>
+    </div>
+
+    <!-- Add any additional content or styling as needed -->
+
+</body>
+
+</html>

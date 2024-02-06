@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentiment Analysis App</title>
+    <link rel="stylesheet" type="text/css" href="/static/style.css">
+    <style>
+        .welcome-message {
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(-20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo">Sentiment Analyzer</h2>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="/analyze">Analyze model</a></li>
+                    <li><a href="/predict">Predict Sentiment</a></li>
+                    <li><a href="/compare">Compare Models</a></li>
+                    <li><a href="/feedback">Provide Feedback</a></li>
+                    <!-- Add more links as needed -->
+                </ul>
+            </div>
+            <div class="search">
+                <input class="srch" type="search" name="" placeholder="Type to text">
+                <a href="#"><button class="btn">search</button></a>
+            </div>
+        </div>
+        
+        <!-- Welcome Message Section -->
+        <div class="welcome-message">
+            <p>Welcome to Sentiment Analyzer Pro!!</p>
+                 <p1>Your go-to tool for understanding the sentiments behind text data!</p1>
+                 <p2>This web app is designed to analyze the emotional tone of written content, helping you uncover valuable insights from customer feedback, reviews, or any text you provide.</p2>
+        </div>
+    </div>
+</body>
+</html>
